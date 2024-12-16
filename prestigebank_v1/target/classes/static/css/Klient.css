@@ -1,0 +1,105 @@
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #ffefb0;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+    background-color: #ffb500;
+    color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+    background-color: #ffe7b4;
+    color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+.kart{
+    z-index: 0;
+    height: 200px;
+    width: 400px;
+    margin-left: 400px;
+    top:110px;
+}
+.card-number{
+    position: absolute;
+    top: 55%;
+    margin-left: 450px;
+}
+.welcome{
+    height: 100px;
+    bottom: 200px;
+    width: 400px;
+    margin-left: 400px;
+}
+.title-Kartlar{
+    bottom: 200px;
+    width: 400px;
+    margin-left: 400px;
+}
+.card-cvv{
+    position: absolute;
+    top: 68%;
+    margin-left: 447px;
+}
+.Valyuta{
+    position: absolute;
+    height: 300px;
+    width: 400px;
+    margin-left: 1000px;
+    top: 35%;
+}
+.create-line {
+    position: absolute;
+    width: 3px;
+    height: 825px; /* Высота линии */
+    top: 0;
+    background-color: black;
+    display: inline-block;
+    margin-left: 900px;
+}
+.money{
+    position: absolute;
+    top: 84%;
+    margin-left: 650px;
+}
